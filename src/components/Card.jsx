@@ -1,5 +1,5 @@
 const Card = ({ children }) => {
-  return <div style={{ border: "1px solid gray", padding: "20px" }}>{children}</div>;
+  return <div className="card">{children}</div>;
 };
 
 export default Card;

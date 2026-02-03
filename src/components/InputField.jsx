@@ -1,11 +1,9 @@
 const InputField = ({ type, placeholder, value, onChange }) => {
   return (
-    <input
-      type={type}
-      placeholder={placeholder}
-      value={value}
-      onChange={onChange}
-    />
+    <div className="input-group">
+      <input type={type} value={value} onChange={onChange} required />
+      <label>{placeholder}</label>
+    </div>
   );
 };
 
